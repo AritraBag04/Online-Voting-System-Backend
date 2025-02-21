@@ -1,0 +1,60 @@
+# Build output
+bin/
+obj/
+out/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+
+# User-specific files
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+.vs/
+
+# Secrets & Configs
+appsettings*.json
+secrets.json
+
+# Dependency files
+node_modules/
+package-lock.json
+yarn.lock
+
+# Entity Framework Migrations
+Migrations/
+
+# Rider & JetBrains IDEs
+.idea/
+*.sln.iml
+
+# Visual Studio Code settings
+.vscode/
+*.code-workspace
+
+# Docker
+docker-compose.override.yml
+.env
+
+# NuGet
+*.nupkg
+.nuget/
+
+# Logs & Temp Files
+logs/
+*.log
+*.tlog
+*.tmp
+
+# Coverage & Testing
+TestResults/
+coverage/
+coverage.*.json
+*.coverage
+*.testsettings
+*.vsix
