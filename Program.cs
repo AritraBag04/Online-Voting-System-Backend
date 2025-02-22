@@ -10,7 +10,8 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 // Registering the Db Context
 builder.Services.AddDbContext<VotingDbContext>(options =>
-    options.UseMySql("",
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
         new MySqlServerVersion(new Version(8, 0, 36))));
 
 var app = builder.Build();
