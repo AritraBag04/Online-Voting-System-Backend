@@ -1,9 +1,12 @@
-﻿namespace Online_Voting_System_Backend.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Online_Voting_System_Backend.Models
 {
     public class Voter
     {
-        public long Id { get; set; }
-        public string? Name { get; set; }
-        public required byte[] Image { get; set; }
+        [Key]
+        public Guid Id { get; set; } = Guid.NewGuid(); // Create a unique id for each voter
+        public string? Name { get; set; } // Name of the voter
+        public required byte[] Image { get; set; } // Image to be used for auth
     }
 }
