@@ -4,7 +4,7 @@ using Online_Voting_System_Backend.Models;
 namespace Online_Voting_System_Backend.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("admins")]
     public class AdminController : ControllerBase
     {
         private readonly VotingDbContext _context;

@@ -6,7 +6,7 @@ namespace Online_Voting_System_Backend.Controllers
 {
 
     [ApiController]
-    [Route("[controller]")]
+    [Route("voters")]
     public class VoterController : ControllerBase
     {
         private readonly VotingDbContext _context;

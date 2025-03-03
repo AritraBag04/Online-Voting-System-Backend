@@ -7,7 +7,7 @@ using System.Xml.Linq;
 namespace Online_Voting_System_Backend.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("elections")]
     public class ElectionController : ControllerBase
     {
         private readonly VotingDbContext _context;
